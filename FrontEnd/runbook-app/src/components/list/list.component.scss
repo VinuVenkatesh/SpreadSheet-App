@@ -1,0 +1,40 @@
+.table-container{
+    max-height: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+.table td{
+    word-wrap: break-word;
+    white-space: normal;
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+.table th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+.table{
+    border-collapse: collapse;
+}
+
+.search{
+    text-align: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    width: 300px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.search-input:focus {
+    outline: none;
+    border-color: #66afe9; 
+}

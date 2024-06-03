@@ -1,0 +1,7 @@
+<button type="button" (click) = "redirectToLogin()">Back to login</button>
+<form [formGroup] = "signupForm" (ngSubmit) = "onSubmit()">
+    <input type="text" placeholder="Username" formControlName = "username">
+    <input type="text" placeholder="Password" formControlName = "password">
+    <input type="text" placeholder="Confirm Password" formControlName = "confirmPassword">
+    <button type="submit" [disabled] = "!signupForm.valid">Signup</button>
+</form>

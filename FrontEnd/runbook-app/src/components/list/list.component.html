@@ -1,0 +1,86 @@
+<app-navigation></app-navigation>
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col">Col 1</th>
+        <th scope="col">Col 2</th>
+        <th scope="col">Col 3</th>
+        <th scope="col">Col 4</th>
+        <th scope="col">Col 5</th>
+        <th scope="col">Col 6</th>
+        <th scope="col">Col 7</th>
+        <th scope="col">Col 8</th>
+        <th scope="col">Col 9</th>
+        <th scope="col">Col 10</th>
+        <th scope="col">Col 11</th>
+        <th scope="col">Col 12</th>
+        <th scope="col">Col 13</th>
+        <th scope="col">Col 14</th>
+        <th scope="col">Col 15</th>
+        <th scope="col">Col 16</th>
+        <th scope="col">Col 17</th>
+        <th scope="col">Col 18</th>
+        <th scope="col">Col 19</th>
+        <th scope="col">Col 20</th>
+        <th scope="col">Col 21</th>
+      </tr>
+    </thead>
+    <tbody  *ngFor = "let filteredAlert of filteredAlerts">
+      <tr>
+        <td><button class="btn btn-primary" (click) = "deleteAlert(filteredAlert)">Delete</button></td>
+        <td><button class="btn btn-primary" (click) = "updateAlert(filteredAlert)">Edit</button></td>
+        <td>{{filteredAlert.col1}}</td>
+        <td>{{filteredAlert.col2}}</td>
+        <td>{{filteredAlert.col3}}</td>
+        <td>{{filteredAlert.col4}}</td>
+        <td>{{filteredAlert.col5}}</td>
+        <td>{{filteredAlert.col6}}</td>
+        <td>{{filteredAlert.col7}}</td>
+        <td>{{filteredAlert.col8}}</td>
+        <td>{{filteredAlert.col9}}</td>
+        <td>{{filteredAlert.col10}}</td>
+        <td>{{filteredAlert.col11}}</td>
+        <td>{{filteredAlert.col12}}</td>
+        <td>{{filteredAlert.col13}}</td>
+        <td>{{filteredAlert.col14}}</td>
+        <td>{{filteredAlert.col15}}</td>
+        <td>{{filteredAlert.col16}}</td>
+        <td>{{filteredAlert.col17}}</td>
+        <td>{{filteredAlert.col18}}</td>
+        <td>{{filteredAlert.col19}}</td>
+        <td>{{filteredAlert.col20}}</td>
+        <td>{{filteredAlert.col21}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="search">
+  <input class="search-input" type = "text" placeholder="Search by Col 1 Value" [(ngModel)] = "_filter">
+</div>
+
+
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
