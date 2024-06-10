@@ -1,8 +1,10 @@
-<form [formGroup] = "loginForm" (ngSubmit) = "onSubmit()">
-    <input type="text" placeholder="Username" formControlName = "username">
-    <input type="text" placeholder="Password" formControlName = "password">
-    <button type="submit" [disabled] = "!loginForm.valid">Login</button>
-    <button type="button" (click)="userSignup()">Signup</button>
-</form>
-
-
+<!doctype html>
+<div class="container-fluid signUpForm">
+    <form [formGroup] = "loginForm" (ngSubmit) = "onSubmit()">
+        <h1>Sign in</h1>
+        <input type="text" placeholder="Username" formControlName = "username" class="form-control username">
+        <input type="password" placeholder="Password" formControlName = "password" class="form-control password">
+        <button class="btn btn-primary login" type="submit" [disabled] = "!loginForm.valid">Login</button>
+        <button class="btn btn-primary signup" type="button" (click)="userSignup()">Signup</button>
+    </form>
+</div>

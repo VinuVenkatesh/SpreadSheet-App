@@ -1,0 +1,32 @@
+.signUpForm{
+    width: 300px; 
+    position: absolute;
+    right: 50%;
+    top: 40%;
+    left: 45%;
+ }
+
+ input{
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+ h1{
+    text-align: center;
+ }
+ .login{
+    position: relative;
+    background-color: #000;
+    left: 35%;
+    top: 30px;
+    height: 50px;
+    width: 100px;
+ }
+.signup{
+    position: relative;
+    background-color: #000;
+    right: 2px;
+    top: 90px;
+    height: 50px;
+    width: 100px;
+}
